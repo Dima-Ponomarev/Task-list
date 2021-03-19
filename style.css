@@ -56,10 +56,10 @@ button{
     content: " ";
     position: absolute;
     left: -5%;
-
     height: 20vh;
     width: 110%;
     border-bottom: 1px solid #aaa;
+    pointer-events: none;
 }
 
 button{
@@ -96,3 +96,36 @@ button:focus{
 }
 
 
+.task-list{
+    list-style: none;
+}
+
+.task-item{
+    padding: 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-content{
+    width: 80%;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.task-content button{
+    margin: 0.5rem 1rem 0 0 ;
+}
+
+.task-status{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+
+    border: 5px solid rgb(192, 19, 19);
+}
+
+.finished{
+    border: 5px solid rgb(15, 177, 0);
+}
