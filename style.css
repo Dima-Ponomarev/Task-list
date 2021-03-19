@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header{
+    font-size: 1.5rem;
+    border-bottom: 1px solid #aaa;
+
+    min-height: 10vh;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input,
+button{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: 3px solid black;
+    
+}
+
+.controls{
+    position: relative;
+    
+    min-height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.controls::after{
+    content: " ";
+    position: absolute;
+    left: -5%;
+
+    height: 20vh;
+    width: 110%;
+    border-bottom: 1px solid #aaa;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background: black;
+    color: white;
+}
+
+button:focus{
+    outline: none;
+}
+
+.task-button{
+    padding: 0.5rem 2rem;
+
+    background: black;
+    color: white;
+
+}
+
+.task-button:hover{
+    background: white;
+    color: black
+}
+
+.control-btns button{
+    margin: 0.5rem 1rem 0 0;
+}
+
+
